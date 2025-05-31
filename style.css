@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav-bar {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 9999;
+}
+
+.offer {
+  position: relative;
+  overflow: hidden;
+}
+
+.offer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  animation: shine 1.2s ease-in-out infinite;
+  filter: blur(1px);
+  z-index: 1;
+  pointer-events: none;
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 120%;
+  }
+}
+
+.nav-bar {
+  padding-left: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.menu {
+  display: block;
+}
+
+.nav-components {
+  display: none;
+}
+@media (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .nav-components {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+  }
+}
+
+.components2:hover {
+  text-decoration: underline;
+}
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 20rem; 
+  background-color: black;
+  color: white;
+  transform: translateX(-100%);
+  transition: transform 0.8s ease-in-out;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+
+.mobile-nav.active {
+  transform: translateX(0);
+}
+.hidden {
+  display: none;
+}
+.overlay {
+  position: fixed;
+  inset: 0; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 900; 
+}
+
+.slider {
+  width: 80%;
+  height: 400px;
+  box-shadow: 0 2px 10px rgba(0, 0, 1, 1);
+}
+@media (max-width: 768px) {
+  .image-wrap {
+    height: 250px;
+  }
+
+  .slider {
+    height: 250px;
+  }
+}
+
+.image {
+  width: 100%; 
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.brands {
+  width: 80px;
+  height: 85px;
+  padding: 20px;
+  font-size: smaller;
+  margin-bottom: 20px;
+}
+.brands img {
+  width: 100%;
+  height: 100%;
+}
+
+
+@media screen and (min-width: 1024px) {
+  .brands {
+    width: 85px;
+    height: 85px;
+  }
+  .brands img {
+    width: 100%;
+    height: 60px;
+  }
+}
+.boxes div {
+  border-radius: 5px;
+  background-color: #f2f4f7;
+  padding: 20px;
+  color: #000;
+}
+.boxes div i {
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+.boxes div h4 {
+  font-weight: 700;
+}
+
+.new-arrival {
+  width: 100%;
+}
+
+.new-arrival-elements {
+  border: 1px solid #e0e0e0;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.new-arrival-elements:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.new-arrival-elements img {
+  width: 63%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+@media (max-width: 768px) {
+  .new-arrival-elements img {
+    width: 78%;
+    height: auto;
+    
+  }
+  .new-arrival-elements {
+    width: 100%;
+
+    padding: 15px;
+  }
+  .new-arrival {
+    padding: 10px;
+  }
+}
+
+.new-arrival-elements button {
+  margin-top: 15px;
+  padding: 5px 10px;
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #000000;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.new-arrival-elements button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.most-wanted-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.most-wanted {
+  position: relative;
+  min-width: 200px;
+  max-width: 230px;
+  flex-shrink: 0;
+  background-color: #ffffff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  z-index: 998;
+}
+
+.most-wanted:hover {
+  transform: translateY(-5px);
+}
+
+.most-wanted img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+}
+
+.sale {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: red;
+  color: white;
+  padding: 4px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 6px;
+  text-transform: uppercase;
+}

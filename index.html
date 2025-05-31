@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nostra</title>
+  <!-- taiwind CDN -->
+  <link href="
+https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
+" rel="stylesheet">
+  <!-- Font cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- style -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Offer  -->
+  <div class="offer flex  justify-center items-center text-white bg-black md:p-1 gap-3 ">
+    <p class="offer-off font-small " style="font-size: small">Sign Up and <b>GET 20% OFF </b> for your first Order</p>
+    <i class=" offer-cross fas fa-times text-white cursor-pointer "></i>
+  </div>
+  <!-- Nav-bar -->
+  <nav class="nav-bar flex  justify-between items-center pb-2">
+    <h1 class="font-bold text-2xl md:text-4xl">Nostra</h1>
+
+    <!-- Menu Icon -->
+    <i class="menu fas fa-bars px-4 py-2 cursor-pointer mt-1"></i>
+
+    <!-- Navigation Links -->
+    <div class="nav-components mt-2 gap-4 flex">
+      <a href="index.html"
+        class="components text-gray-700 font-medium text-base px-4 py-2 rounded-md transition duration-300 ease-in-out hover:text-black hover:bg-gray-100">Home</a>
+      <a href="#new-arrival"
+        class="components text-gray-700 font-medium text-base px-4 py-2 rounded-md transition duration-300 ease-in-out hover:text-black hover:bg-gray-100">New
+        Arrival</a>
+      <a href="#wanted"
+        class="components text-gray-700 font-medium text-base px-4 py-2 rounded-md transition duration-300 ease-in-out hover:text-black-600 hover:bg-gray-100">Most
+        Wanted</a>
+      <a href="collections.html"
+        class="components text-gray-700 font-medium text-base px-4 py-2 rounded-md transition duration-300 ease-in-out hover:text-black hover:bg-gray-100">Collections</a>
+      <a href="contact.html"
+        class="components text-gray-700 font-medium text-base px-4 py-2 rounded-md transition duration-300 ease-in-out hover:text-black hover:bg-gray-100">Contact
+        Us</a>
+    </div>
+
+  </nav>
+
+
+  <!-- mobile-nav -->
+
+  <div class="mobile-nav bg-black text-white w-80 mt-20 flex  justify-between p-6   ">
+
+    <div class="mobile-comp flex flex-col justify-center gap-6">
+      <a href="index.html" class="components2">Home</a>
+      <a href="#new-arrival" class="components2">New Arrival</a>
+      <a href="#wanted" class="components2">Most Wanted</a>
+      <a href="collections.html" class="components2">Collections</a>
+      <a href="contact.html" class="components2">Contact Us</a>
+
+
+    </div>
+    <i class=" cross fas fa-chevron-left pb-4 cursor-pointer"></i>
+  </div>
+  <div class="overlay hidden fixed inset-0 bg-black bg-opacity-50 z-5"></div>
+
+  <!-- slider -->
+
+  <div class=" slider-main flex justify-center  ">
+    <div class="slider relative overflow-hidden flex my-6  md:mx-28 md:my-10 z-10 rounded-3xl w-full md:w-full  ">
+      <div
+        class="slider-right absolute top-1/2 transform -translate-y-1/2  translate-x-2 md:-translate-x-10 p-2 md:p-5 border rounded-full bg-black cursor-pointer right-5 z-40">
+        <i class="fa-solid fa-angle-right text-white"></i>
+      </div>
+
+      <div
+        class="slider-content relative z-20 p-4 md:p-8 transform  md:translate-y-20 md:translate-x-36 translate-y-10 translate-x-10">
+        <h1 class="text-2xl md:text-4xl font-bold text-white mb-2">Level up your style with our</h1>
+        <h4 class="text-xl md:text-2xl font-medium text-gray-200 mb-4">Summer Collections</h4>
+        <button
+          class="bg-black hover:bg-transparent border text-white px-4 md:px-6 py-2 md:py-3 rounded-full shadow-lg flex items-center gap-2 transition-colors duration-300 text-sm md:text-base">
+          Shop Now <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+
+      <div class="image-container absolute top-0 left-0 w-full h-full z-10 overflow-hidden ">
+        <div class="image-wrap flex transition-transform duration-500 h-1/2 md:h-full w-[300%]">
+          <img class="image" src="img/products/slider-one.jpg" alt="">
+          <img class="image" src="img/products/slider-two.jpg" alt="">
+          <img class="image" src="img/products/slider-three.jpg" alt="">
+        </div>
+      </div>
+
+      <div
+        class="slider-left absolute top-1/2 transform -translate-y-1/2 -translate-x-1 p-2 md:p-5 md:-translate-x- border rounded-full bg-black cursor-pointer left-5 z-40">
+        <i class="fa-solid fa-angle-left text-white"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- brands icons -->
+
+  <div class="brand-container text-center pr-10  overflow-hidden">
+    <div class="branditems flex  justify-around items-cente r">
+      <div class="brands">
+        <img src="img/icons/adidas.png" alt="">
+        <p>Adidas</p>
+      </div>
+
+      <div class="brands">
+        <img src="img/icons/behance.png" alt="">
+        <p>Behance</p>
+      </div>
+
+      <div class="brands">
+        <img src="img/icons/nike.png" alt="">
+        <p>Nike</p>
+      </div>
+
+      <div class="brands">
+        <img src="img/icons/puma.png" alt="">
+        <p>PUMA</p>
+      </div>
+
+      <div class="brands">
+        <img src="img/icons/bffa1dd13416e902d764158ba59c34cd.png" alt="">
+        <p>CK</p>
+      </div>
+
+      <div class="brands">
+        <img src="img/icons/behance.png" alt="">
+        <p>Behance</p>
+      </div>
+
+      <div class="brands ">
+        <img src="img/icons/pngwing.com.png" alt="">
+        <p>LouisVuitton</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- features -->
+
+  <div class="box-conatiner p-5 mt-8 md:mt-10 text-white bg-black pb-14">
+    <div class="heading md:flex md:justify-between">
+      <div class="text-2xl md:text-3xl md:font-bold font-bold ">
+        <h1>We Provide Best</h1>
+        <h1>Customer Experiences</h1>
+      </div>
+      <div>
+        <p class="p-4"><span class=text-2xl>||</span> We ensure that our customer have the best shipping
+          experience</p>
+      </div>
+
+    </div>
+
+    <div class=" boxes mt-6 grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <div>
+        <i class="fa-regular fa-circle-check"></i>
+        <h4>Original Products</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+      </div>
+
+      <div>
+        <i class="fa-regular fa-face-smile"></i>
+        <h4>Satisfaction Guarantee</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-broom"></i>
+        <h4>New Arrival Everyday</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+      </div>
+
+      <div>
+        <i id="new-arrival" class="fa-solid fa-truck-fast"></i>
+        <h4>Fast & Free Shipping</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- new arrival -->
+
+  <section >
+    <div class="new-arrival-container mt-5 mx-1 my-2 md:my-8">
+      <h2 class=" font-bold text-3xl md:text-3xl mb-1 ">New Arrivals</h2>
+      <div class="new-arrival grid grid-cols-2 lg:grid-cols-4 w-full gap-3 ">
+        <div class="new-arrival-elements">
+          <img src="img/products/can2set.png" alt="">
+          <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="new-arrival-elements">
+          <img src="img/products/can3women.png" alt="">
+          <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="new-arrival-elements">
+          <img src="img/products/can5men.png" alt="">
+          <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div  class=" new-arrival-elements">
+          <img src="img/products/cankacc.png" alt="">
+          <button id="wanted">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- most wanted -->
+
+  <div class=" wanted" >
+    <div class="most-wanted-section z-1 p-[40px] bg-white overflow-hidden box-border relative">
+      <h2 class="section-title text-2xl md:text-3xl font-bold m-2 md:m-1 ">Most Wanted</h2>
+
+      <div class="most-wanted-wrapper flex gap-10 overflow-x-auto scroll-smooth w-full box-border">
+        <div class="most-wanted">
+          <img src="img/products/can3men.png" alt="Product">
+          <p class="sale">Sale</p>
+        </div>
+        <div class="most-wanted">
+          <img src="img/products/cankid1.png" alt="Product">
+          <p class="sale">Sale</p>
+        </div>
+        <div class="most-wanted">
+          <img src="img/products/can4women.png" alt="Product">
+          <p class="sale">Sale</p>
+        </div>
+        <div class="most-wanted">
+          <img src="img/products/can2men.png" alt="Product">
+          <p class="sale">Sale</p>
+        </div>
+        <div class="most-wanted">
+          <img src="img/products/cankid3.png" alt="Product">
+          <p class="sale">Sale</p>
+        </div>
+        <div class="most-wanted">
+          <img src="img/products/cankacc5.png" alt="Product">
+          <p class="sale">Sale</p>
+        </div>
+        <div class="most-wanted">
+          <img src="img/products/can7women.png" alt="Product">
+          <p class="sale">Sale</p>
+        </div>
+        <div class="most-wanted">
+          <img src="img/products/can2winter.png" alt="Product">
+          <p class="sale">Sale</p>
+        </div>
+        <div class="most-wanted">
+          <img src="img/products/cankid1.png" alt="Product">
+          <p class="sale">Sale</p>
+        </div>
+        <div class="most-wanted">
+          <img src="img/products/can4women.png" alt="Product">
+          <p class="sale">Sale</p>
+        </div>
+        <div class="most-wanted">
+          <img src="img/products/can2men.png" alt="Product">
+          <p class="sale">Sale</p>
+        </div>
+        <div class="most-wanted">
+          <img src="img/products/cankid3.png" alt="Product">
+          <p class="sale">Sale</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- offer -->
+
+  <div class="limited-offer w-full py-10 px flex flex-col md:flex-row items-center justify-center md:gap-6 lg:gap-4 max-w-screen-lg mx-auto lg:py-6 lg:rounded-2xl lg:mt-20 lg:mb-10"
+    style="background: linear-gradient(to bottom, #2B2B2C, black);">
+   
+    <div class="offer-img w-full md:w-[40%] flex justify-center">
+      <img src="img/products/set1.png" alt="Limited Offer" class="w-[220px] md:w-[280px] rounded-lg shadow-lg" />
+    </div>
+
+    <div class="offer-text w-full mt-4 md:w-[50%] text-white text-center md:text-left space-y-4 ">
+      <h2 class="text-2xl md:text-3xl font-bold">Limited Offer</h2>
+      <h4 class="text-base md:text-lg font-medium">
+        35% OFF for the first 30 Customers
+      </h4>
+      <button class="bg-white text-black px-5 py-2 rounded-md font-semibold hover:bg-gray-300 transition duration-300">
+        Shop Now <i class="fa-solid fa-arrow-right ml-2"></i>
+      </button>
+    </div>
+  </div>
+  <section class="text-center  py-10 rounded-lg shadow-lg  ">
+    <div class="lg:mb-14">
+      <h1 class="font-bold text-2xl m-4 text-black">Join Our News Letter</h1>
+      <p>Signup for email newspaper to get exclusive discounts,updates and more..</p>
+      <input type="text" class="m-6 w-96 p-2 rounded " style="width: 60%; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);">
+
+      <button class="bg-black p-2 text-white rounded text-sm "
+        style=" box-shadow: 0 4px 10px rgb(0, 0, 0);">Signup</button>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+
+  <footer class=" bg-black p-2  shadow-lg ">
+    <div class="text-white text-left p-5 flex flex-col gap-5">
+      <h1 class="font-bold md:text-xl">NOSTRA</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui fugiat quibusdam explicabo ratione culpa
+        consequatur repellendus dolorum velit sunt similique?</p>
+      <div class="footer-icon ">
+        <i class="icon fa-brands fa-instagram p-3" style="color: #ffffff;"></i>
+        <i class="icon fa-brands fa-twitter p-3 " style="color: #ffffff;"></i>
+        <i class="icon fa-brands fa-facebook p-3" style="color: #ffffff;"></i>
+      </div>
+      <p>@ 2025 nostra.com</p>
+    </div>
+  </footer>
+
+
+<!-- script -->
+
+
+<script>
+  
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', function () {
+
+      mobileMenu.classList.toggle('hidden');
+    });
+  });
+ 
+  const offerBar = document.querySelector(".offer");
+  const offerCross = document.querySelector(".offer-cross");
+
+  offerCross.addEventListener("click", function () {
+    offerBar.style.display = "none";
+  });
+  const mobnav = document.getElementsByClassName("mobile-nav")[0];
+  const crossclose = document.getElementsByClassName("cross")[0];
+  const menu = document.getElementsByClassName("menu")[0];
+  const overlay = document.getElementsByClassName("overlay")[0];
+
+  menu.addEventListener("click", () => {
+    mobnav.classList.add("active");
+    menu.classList.add("hidden"); 
+    overlay.classList.remove("hidden"); 
+  });
+
+  crossclose.addEventListener("click", () => {
+    mobnav.classList.remove("active");
+    menu.classList.remove("hidden"); 
+    overlay.classList.add("hidden"); 
+  });
+
+  
+  overlay.addEventListener("click", () => {
+    mobnav.classList.remove("active");
+    menu.classList.remove("hidden");
+    overlay.classList.add("hidden");
+  });
+
+
+  const imageWrap = document.querySelector('.image-wrap'); 
+  const images = document.querySelectorAll('.image');
+  const totalImages = images.length;
+  let currentIndex = 0;
+
+  
+  document.querySelector('.slider-right').addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % totalImages;
+    updateSlider();
+  });
+
+  
+  document.querySelector('.slider-left').addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+    updateSlider();
+  });
+
+  function updateSlider() {
+    imageWrap.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+</script>
+
+
+</body>
+
+</html>

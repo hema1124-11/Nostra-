@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nostra</title>
+  <!-- taiwind CDN -->
+  <link href="
+https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
+" rel="stylesheet">
+  <!-- Font cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- style -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Offer  -->
+  <div class="offer flex  justify-center items-center text-white bg-black md:p-1 gap-3 ">
+    <p class="offer-off font-small " style="font-size: small">Sign Up and <b>GET 20% OFF </b> for your first Order</p>
+    <i class=" offer-cross fas fa-times text-white cursor-pointer "></i>
+  </div>
+  <!-- Nav-bar -->
+  <nav class="nav-bar flex  justify-between items-center pb-2">
+    <h1 class="font-bold text-2xl md:text-4xl">Nostra</h1>
+
+    <!-- Menu Icon -->
+    <i class="menu fas fa-bars px-4 py-2 cursor-pointer mt-1"></i>
+
+    <!-- Navigation Links -->
+    <div class="nav-components mt-2 gap-4 flex">
+      <a href="index.html"
+        class="components text-gray-700 font-medium text-base px-4 py-2 rounded-md transition duration-300 ease-in-out hover:text-black hover:bg-gray-100">Home</a>
+      <a href="index.html"
+        class="components text-gray-700 font-medium text-base px-4 py-2 rounded-md transition duration-300 ease-in-out hover:text-black hover:bg-gray-100">New
+        Arrival</a>
+      <a href="index.html"
+        class="components text-gray-700 font-medium text-base px-4 py-2 rounded-md transition duration-300 ease-in-out hover:text-black-600 hover:bg-gray-100">Most
+        Wanted</a>
+      <a href="collections.html"
+        class="components text-gray-700 font-medium text-base px-4 py-2 rounded-md transition duration-300 ease-in-out hover:text-black hover:bg-gray-100">Collections</a>
+      <a href="contact.html"
+        class="components text-gray-700 font-medium text-base px-4 py-2 rounded-md transition duration-300 ease-in-out hover:text-black hover:bg-gray-100">Contact
+        Us</a>
+    </div>
+
+  </nav>
+
+
+  <!-- mobile-nav -->
+
+  <div class="mobile-nav bg-black text-white w-80 mt-20 flex  justify-between p-6   ">
+
+    <div class="mobile-comp flex flex-col justify-center gap-6">
+      <a href="index.html" class="components2">Home</a>
+      <a href="#new-arrival" class="components2">New Arrival</a>
+      <a href="#wanted" class="components2">Most Wanted</a>
+      <a href="collections.html" class="components2">Collections</a>
+      <a href="contact.html" class="components2">Contact Us</a>
+
+
+    </div>
+    <i class=" cross fas fa-chevron-left pb-4 cursor-pointer"></i>
+  </div>
+  <div class="overlay hidden fixed inset-0 bg-black bg-opacity-50 z-5"></div>
+
+  <!-- collections -->
+
+  <div class="container mx-auto p-6 bg-white text-black">
+  <div class="flex gap-6">
+
+    <!-- Collection Sidebar -->
+     <div class="collection-side w-1/4 bg-gray-100 p-1 pr-3 rounded-xl shadow-sm sticky top-6 h-max ">
+     <h3 class="text-lg font-semibold mb-2 border-b pb-1">Adults</h3>
+      <div class="space-y-2 mb-4">
+        <label class="block"><input type="checkbox" name="tags" value="Women" class="mr-1">Women</label>
+        <label class="block"><input type="checkbox" name="tags" value="Men" class="mr-2">Men</label>
+        <label class="block"><input type="checkbox" name="tags" value="Set" class="mr-2">Set</label>
+      </div>
+
+      <h3 class="text-lg font-semibold mb-2 border-b pb-1">Kids</h3>
+      <div class="space-y-2 mb-4">
+        <label class="block"><input type="checkbox" name="tags" value="B&g" class="mr-2">B&g</label>
+        <label class="block"><input type="checkbox" name="tags" value="babies" class="mr-2">babies</label>
+      </div>
+
+      <h3 class="text-lg font-semibold mb-2 border-b pb-1">Accessories</h3>
+      <div class="space-y-2">
+        <label class="block"><input type="checkbox" name="tags" value="Foot" class="mr-2">Foot</label>
+        <label class="block"><input type="checkbox" name="tags" value="Others" class="mr-2">Others</label>
+      </div>
+    </div>
+
+    <!-- Product Section -->
+    <div class="w-full">
+
+      <!-- Sticky Search Bar -->
+       
+       <form class=" flex items-center  border border-gray-300 rounded-md overflow-hidden sticky top-50 bg-white mb-6 ">
+
+          <input type="search" placeholder="Search" class="flex-grow p-2 outline-none text-sm">
+        <button type="submit" class="bg-black text-white px-4 py-2">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+      
+
+      <!-- Products Grid -->
+      <div class="products overflow-y-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6 products" style="height: calc(100vh - 180px);"></div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<!-- script -->
+
+
+<script>
+  const productContainer = document.querySelector(".products");
+  const products = [
+  { id: 1, name: "W&W", src: "img/products/can3women.png", price: 679, tags: ["Women"] },
+  { id: 2, name: "W&W", src: "img/products/can4women.png", price: 500, tags: ["Women"] },
+  { id: 3, name: "W&W", src: "img/products/can1summer.png", price: 1000, tags: ["Women"] },
+  { id: 4, name: "W&W", src: "img/products/can5women.png", price: 500, tags: ["Women"] },
+  { id: 5, name: "W&W", src: "img/products/can6women.png", price: 450, tags: ["Women"] },
+  { id: 6, name: "W&W", src: "img/products/can7women.png", price: 459, tags: ["Women"] },
+
+  { id: 7, name: "M&M", src: "img/products/can1men.png", price: 999, tags: ["Men"] },
+  { id: 8, name: "M&M", src: "img/products/can2men.png", price: 799, tags: ["Men"] },
+  { id: 9, name: "M&M", src: "img/products/can3men.png", price: 849, tags: ["Men"] },
+  { id: 10, name:"M&M", src: "img/products/can5men.png", price: 749, tags: ["Men"] },
+
+  { id: 11, name: "Set&Set", src: "img/products/cansetkis.png", price: 900, tags: ["Set"] },
+  { id: 12, name: "Set&Set", src: "img/products/can2set.png", price: 2500, tags: ["Set"] },
+  { id: 13, name: "Set&Set", src: "img/products/set1.png", price: 3000, tags: ["Set"] },
+   { id: 15, name: "Set&Set", src: "img/products/can2winter.png", price: 3000, tags: ["Set"] },
+
+  { id: 16, name: "kids", src: "img/products/cankid4.png", price: 980, tags: ["B&g"] },
+  { id: 17, name: "kids", src: "img/products/cankid1.png", price: 100, tags: ["B&g"] },
+  { id: 18, name: "kids", src: "img/products/cankid2.png", price: 150, tags: ["babies"] },
+  { id: 19, name: "kids", src: "img/products/cankid3.png", price: 180, tags: ["B&g"] },
+  { id: 20, name: "kids", src: "img/products/cansetkis.png", price: 200, tags: ["babies"] },
+   { id: 21, name: "kids", src: "img/products/cankid4.png", price: 980, tags: ["babies"] },
+  { id: 22, name: "kids", src: "img/products/cankid1.png", price: 100, tags: ["babies"] },
+    { id: 23, name: "kids", src: "img/products/cankid2.png", price: 150, tags: ["B&g"] },
+    { id: 24, name: "kids", src: "img/products/cansetkis.png", price: 200, tags: ["B&g"] },
+
+  { id: 25, name: "Formal Shoes", src: "img/products/cankacc.png", price: 199, tags: ["Foot"] },
+  { id: 26, name: "High Heel", src: "img/products/cankacc2.png", price: 249, tags: ["Foot"] },
+  { id: 27, name: "High Heel", src: "img/products/cankacc3.png", price: 299, tags: ["Foot"] },
+  { id: 28, name: "Flats", src: "img/products/cankacc4.png", price: 349, tags: ["Foot"] },
+  { id: 29, name: "Watch", src: "img/products/cankacc5.png", price: 399, tags: ["Others"] },
+  { id: 30, name: "Watch", src: "img/products/cankacc6.png", price: 429, tags: ["Others"] },
+  { id: 31, name: "Shine&Shine", src: "img/products/cankacc7.png", price: 489, tags: ["Others"] }
+];
+
+  
+
+  products.forEach((product) => {
+    const card = document.createElement("div");
+    card.className = "border rounded-lg overflow-hidden shadow-sm p-4 text-center bg-white";
+
+    card.innerHTML = `
+      <img src="${product.src}" alt="${product.name}" class="w-full h-40 object-cover mb-2 rounded" />
+      <h4 class="text-md font-bold mb-1">${product.name}</h4>
+      <p class="text-sm text-gray-600 mb-2">₹${product.price}</p>
+      <p class="text-xs text-gray-400">${product.tags.join(", ")}</p> 
+    `;
+
+    productContainer.appendChild(card);
+  });
+  
+  const productsContainer = document.querySelector(".products");
+  const checkboxes = document.querySelectorAll('input[name="tags"]');
+
+  function displayProducts(filteredProducts) {
+    productsContainer.innerHTML = ""; 
+    filteredProducts.forEach(product => {
+      const productCard = `
+        <div class="bg-white border rounded-lg shadow-md p-4 text-center cursor-pointer  ">
+          <img src="${product.src}" alt="${product.name}" class="mx-auto h-40 md:h-52 object-contain mb-2 " />
+          <h4 class="font-semibold">${product.name}</h4>
+          <p class="text-sm text-gray-600">${product.tags[0]}</p>
+          <p class="text-black font-bold mt-1">₹${product.price}</p>
+        </div>
+      `;
+      productsContainer.innerHTML += productCard;
+    });
+  }
+
+  
+  function filterProducts() {
+    const selectedTags = Array.from(checkboxes)
+      .filter(checkbox => checkbox.checked)
+      .map(checkbox => checkbox.value);
+
+    if (selectedTags.length === 0) {
+      displayProducts(products); 
+    } else {
+      const filtered = products.filter(product =>
+        product.tags.some(tag => selectedTags.includes(tag))
+      );
+      displayProducts(filtered);
+    }
+  }
+
+  
+  checkboxes.forEach(checkbox => {
+    checkbox.addEventListener("change", filterProducts);
+  });
+
+ 
+  displayProducts(products);
+  
+    document.addEventListener("DOMContentLoaded", function () {
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', function () {
+
+      mobileMenu.classList.toggle('hidden');
+    });
+  });
+ 
+  const offerBar = document.querySelector(".offer");
+  const offerCross = document.querySelector(".offer-cross");
+
+  offerCross.addEventListener("click", function () {
+    offerBar.style.display = "none";
+  });
+  const mobnav = document.getElementsByClassName("mobile-nav")[0];
+  const crossclose = document.getElementsByClassName("cross")[0];
+  const menu = document.getElementsByClassName("menu")[0];
+  const overlay = document.getElementsByClassName("overlay")[0];
+
+  menu.addEventListener("click", () => {
+    mobnav.classList.add("active");
+    menu.classList.add("hidden"); 
+    overlay.classList.remove("hidden"); 
+  });
+
+  crossclose.addEventListener("click", () => {
+    mobnav.classList.remove("active");
+    menu.classList.remove("hidden"); 
+    overlay.classList.add("hidden"); 
+  });
+
+  
+  overlay.addEventListener("click", () => {
+    mobnav.classList.remove("active");
+    menu.classList.remove("hidden");
+    overlay.classList.add("hidden");
+  });
+
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nostra</title>
+  <!-- taiwind CDN -->
+  <link href="
+https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
+" rel="stylesheet">
+  <!-- Font cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- style -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Offer  -->
+  <div class="offer flex  justify-center items-center text-white bg-black md:p-1 gap-3 ">
+    <p class="offer-off font-small " style="font-size: small">Sign Up and <b>GET 20% OFF </b> for your first Order</p>
+    <i class=" offer-cross fas fa-times text-white cursor-pointer "></i>
+  </div>
+  <!-- Nav-bar -->
+  <nav class="nav-bar flex  justify-between items-center pb-2">
+    <h1 class="font-bold text-2xl md:text-4xl">Nostra</h1>
+
+    <!-- Menu Icon -->
+    <i class="menu fas fa-bars px-4 py-2 cursor-pointer mt-1"></i>
+
+    <!-- Navigation Links -->
+    <div class="nav-components mt-2 gap-4 flex">
+      <a href="index.html"
+        class="components text-gray-700 font-medium text-base px-4 py-2 rounded-md transition duration-300 ease-in-out hover:text-black hover:bg-gray-100">Home</a>
+      <a href="index.html"
+        class="components text-gray-700 font-medium text-base px-4 py-2 rounded-md transition duration-300 ease-in-out hover:text-black hover:bg-gray-100">New
+        Arrival</a>
+      <a href="index.html"
+        class="components text-gray-700 font-medium text-base px-4 py-2 rounded-md transition duration-300 ease-in-out hover:text-black-600 hover:bg-gray-100">Most
+        Wanted</a>
+      <a href="collections.html"
+        class="components text-gray-700 font-medium text-base px-4 py-2 rounded-md transition duration-300 ease-in-out hover:text-black hover:bg-gray-100">Collections</a>
+      <a href="contact.html"
+        class="components text-gray-700 font-medium text-base px-4 py-2 rounded-md transition duration-300 ease-in-out hover:text-black hover:bg-gray-100">Contact
+        Us</a>
+    </div>
+
+  </nav>
+
+
+  <!-- mobile-nav -->
+
+  <div class="mobile-nav bg-black text-white w-80 mt-20 flex  justify-between p-6   ">
+
+    <div class="mobile-comp flex flex-col justify-center gap-6">
+      <a href="index.html" class="components2">Home</a>
+      <a href="index.html" class="components2">New Arrival</a>
+      <a href="index.html" class="components2">Most Wanted</a>
+      <a href="collections.html" class="components2">Collections</a>
+      <a href="contact.html" class="components2">Contact Us</a>
+
+
+    </div>
+    <i class=" cross fas fa-chevron-left pb-4 cursor-pointer"></i>
+  </div>
+  <div class="overlay hidden fixed inset-0 bg-black bg-opacity-50 z-5"></div>
+
+  <!-- contact -->
+
+   <section class="bg-white dark:bg-black  ">
+  <div class="py-2  px-4 md:mb-10 md:mx-auto max-w-screen-md ">
+    <h2 class="mb-2 mt-2 md:mt-10 text-3xl md:text-4xl tracking-tight font-bold text-center text-black dark:text-white">Get in Touch</h2>
+    <p class="mb-3 lg:mb-8 font-light text-center text-black dark:text-white sm:text-xl">
+      Have a question about our fashion products? Need help choosing the right style? We'd love to hear from you!
+    </p>
+    <form action="#" class=" md:space-y-6 ">
+      <div >
+        <label for="email" class="block m-2 text-sm  font-medium text-black dark:text-white">Your email</label>
+        <input type="email" id="email"
+          class="shadow-sm bg-gray-100  border border-black text-black text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-96 md:w-full p-2.5 dark:bg-gray-800 dark:border-white dark:text-white dark:focus:ring-white dark:focus:border-white"
+          placeholder="you@example.com" required>
+      </div>
+      <div>
+        <label for="subject" class="block m-2 text-sm font-medium text-black dark:text-white">Subject</label>
+        <input type="text" id="subject"
+          class="block p-3 w-96 md:w-full text-sm text-black bg-gray-100 rounded-lg border border-black shadow-sm focus:ring-gray-500 focus:border-gray-500 dark:bg-gray-800 dark:border-white dark:text-white dark:focus:ring-white dark:focus:border-white"
+          placeholder="What's on your mind?" required>
+      </div>
+      <div class="sm:col-span-2">
+        <label for="message" class="block m-2 text-sm font-medium text-black dark:text-white">Your message</label>
+        <textarea id="message" rows="6"
+          class="block p-2.5 w-96 md:w-full  text-sm text-black bg-gray-100 rounded-lg shadow-sm border border-black focus:ring-gray-500 focus:border-gray-500 dark:bg-gray-800 dark:border-white dark:text-white dark:focus:ring-white dark:focus:border-white"
+          placeholder="Tell us how we can help you..."></textarea>
+      </div>
+      <button type="submit"
+        class="py-3 mt-3  px-5 text-sm font-medium text-center text-white rounded-lg bg-black  hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-500 dark:bg-white dark:text-black dark:hover:bg-gray-200 dark:focus:ring-white">
+        Send Message
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- footer -->
+  <footer class=" bg-black p-1  shadow-lg ">
+    <div class="text-white text-left p-3 flex flex-col gap-2 md:gap-5">
+      <h1 class="font-bold md:text-2xl">NOSTRA</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui fugiat quibusdam explicabo ratione culpa
+        consequatur repellendus dolorum velit sunt similique?</p>
+      <div class="footer-icon ">
+        <i class="icon fa-brands fa-instagram p-3" style="color: #ffffff;"></i>
+        <i class="icon fa-brands fa-twitter p-3 " style="color: #ffffff;"></i>
+        <i class="icon fa-brands fa-facebook p-3" style="color: #ffffff;"></i>
+      </div>
+      <p>@ 2025 nostra.com</p>
+    </div>
+  </footer>
+  <!-- script -->
+   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', function () {
+
+      mobileMenu.classList.toggle('hidden');
+    });
+  });
+ 
+  const offerBar = document.querySelector(".offer");
+  const offerCross = document.querySelector(".offer-cross");
+
+  offerCross.addEventListener("click", function () {
+    offerBar.style.display = "none";
+  });
+  const mobnav = document.getElementsByClassName("mobile-nav")[0];
+  const crossclose = document.getElementsByClassName("cross")[0];
+  const menu = document.getElementsByClassName("menu")[0];
+  const overlay = document.getElementsByClassName("overlay")[0];
+
+  menu.addEventListener("click", () => {
+    mobnav.classList.add("active");
+    menu.classList.add("hidden"); 
+    overlay.classList.remove("hidden"); 
+  });
+
+  crossclose.addEventListener("click", () => {
+    mobnav.classList.remove("active");
+    menu.classList.remove("hidden"); 
+    overlay.classList.add("hidden"); 
+  });
+
+  
+  overlay.addEventListener("click", () => {
+    mobnav.classList.remove("active");
+    menu.classList.remove("hidden");
+    overlay.classList.add("hidden");
+  });
+</script>
+</body>
+</html>
