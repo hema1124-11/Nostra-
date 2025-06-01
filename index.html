@@ -15,7 +15,7 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class=" min-h-screen w-full ">
   <!-- Offer  -->
   <div class="offer flex  justify-center items-center text-white bg-black md:p-1 gap-3 ">
     <p class="offer-off font-small " style="font-size: small">Sign Up and <b>GET 20% OFF </b> for your first Order</p>
@@ -50,7 +50,7 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
 
   <!-- mobile-nav -->
 
-  <div class="mobile-nav bg-black text-white w-80 mt-20 flex  justify-between p-6   ">
+  <div class="mobile-nav bg-black text-white w-80 mt-20 flex text-xs justify-between p-6   ">
 
     <div class="mobile-comp flex flex-col justify-center gap-6">
       <a href="index.html" class="components2">Home</a>
@@ -76,16 +76,16 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
 
       <div
         class="slider-content relative z-20 p-4 md:p-8 transform  md:translate-y-20 md:translate-x-36 translate-y-10 translate-x-10">
-        <h1 class="text-2xl md:text-4xl font-bold text-white mb-2">Level up your style with our</h1>
-        <h4 class="text-xl md:text-2xl font-medium text-gray-200 mb-4">Summer Collections</h4>
-        <button
-          class="bg-black hover:bg-transparent border text-white px-4 md:px-6 py-2 md:py-3 rounded-full shadow-lg flex items-center gap-2 transition-colors duration-300 text-sm md:text-base">
-          Shop Now <i class="fa-solid fa-arrow-right"></i>
-        </button>
+        <h1 class="text-sm md:text-4xl font-bold text-white mb-2">Level up your style with our</h1>
+        <h4 class="text-xs md:text-2xl font-medium text-gray-200 mb-4">Summer Collections</h4>
+        <div
+          class="bg-black hover:bg-transparent border text-white w-24 md:w-36  px-2 md:px-6 py-1 md:py-3 rounded-full shadow-lg flex items-center gap-2 transition-colors duration-300 text-xs font-thin md:text-base"
+        >  Shop Now <i class="fa-solid fa-arrow-right"></i>
+        </div>
       </div>
 
-      <div class="image-container absolute top-0 left-0 w-full h-full z-10 overflow-hidden ">
-        <div class="image-wrap flex transition-transform duration-500 h-1/2 md:h-full w-[300%]">
+      <div class="image-container absolute top-0 left-0  h-full z-10 overflow-hidden ">
+        <div class="image-wrap flex transition-transform duration-500 w-full  md:h-full  ">
           <img class="image" src="img/products/slider-one.jpg" alt="">
           <img class="image" src="img/products/slider-two.jpg" alt="">
           <img class="image" src="img/products/slider-three.jpg" alt="">
@@ -144,7 +144,7 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
 
   <div class="box-conatiner p-5 mt-8 md:mt-10 text-white bg-black pb-14">
     <div class="heading md:flex md:justify-between">
-      <div class="text-2xl md:text-3xl md:font-bold font-bold ">
+      <div class="text-xl md:text-3xl md:font-bold font-bold ">
         <h1>We Provide Best</h1>
         <h1>Customer Experiences</h1>
       </div>
@@ -155,7 +155,7 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
 
     </div>
 
-    <div class=" boxes mt-6 grid grid-cols-2 lg:grid-cols-4 gap-4">
+    <div class=" boxes mt-6 grid grid-cols-2 lg:grid-cols-4 gap-4 text-xs md:text-sm">
       <div>
         <i class="fa-regular fa-circle-check"></i>
         <h4>Original Products</h4>
@@ -181,28 +181,29 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
       </div>
     </div>
   </div>
+ <div id="new-arrival"></div>
 
   <!-- new arrival -->
 
   <section >
     <div class="new-arrival-container mt-5 mx-1 my-2 md:my-8">
-      <h2 class=" font-bold text-3xl md:text-3xl mb-1 ">New Arrivals</h2>
+      <h2 class=" font-bold text-2xl md:text-3xl mb-1 ">New Arrivals</h2>
       <div class="new-arrival grid grid-cols-2 lg:grid-cols-4 w-full gap-3 ">
-        <div class="new-arrival-elements">
+        <div class="new-arrival-elements ">
           <img src="img/products/can2set.png" alt="">
-          <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+          <div>Shop Now <i class="fa-solid fa-arrow-right"></i></div>
         </div>
         <div class="new-arrival-elements">
           <img src="img/products/can3women.png" alt="">
-          <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+          <div>Shop Now <i class="fa-solid fa-arrow-right"></i></div>
         </div>
         <div class="new-arrival-elements">
           <img src="img/products/can5men.png" alt="">
-          <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+          <div>Shop Now <i class="fa-solid fa-arrow-right"></i></div>
         </div>
         <div  class=" new-arrival-elements">
           <img src="img/products/cankacc.png" alt="">
-          <button id="wanted">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+          <div id="wanted">Shop Now <i class="fa-solid fa-arrow-right"></i></div>
         </div>
       </div>
     </div>
@@ -211,10 +212,10 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
   <!-- most wanted -->
 
   <div class=" wanted" >
-    <div class="most-wanted-section z-1 p-[40px] bg-white overflow-hidden box-border relative">
+    <div class="most-wanted-section z-1  bg-white overflow-hidden box-border relative">
       <h2 class="section-title text-2xl md:text-3xl font-bold m-2 md:m-1 ">Most Wanted</h2>
 
-      <div class="most-wanted-wrapper flex gap-10 overflow-x-auto scroll-smooth w-full box-border">
+      <div class="most-wanted-wrapper flex md:gap-2 overflow-x-auto scroll-smooth w-full box-border">
         <div class="most-wanted">
           <img src="img/products/can3men.png" alt="Product">
           <p class="sale">Sale</p>
@@ -269,21 +270,21 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
 
   <!-- offer -->
 
-  <div class="limited-offer w-full py-10 px flex flex-col md:flex-row items-center justify-center md:gap-6 lg:gap-4 max-w-screen-lg mx-auto lg:py-6 lg:rounded-2xl lg:mt-20 lg:mb-10"
+  <div class="limited-offer w-full md:p-2  flex flex-col md:flex-row items-center justify-center md:gap-6 lg:gap-4 max-w-screen-lg mx-auto lg:py-6 lg:rounded-2xl lg:mt-20 lg:mb-10"
     style="background: linear-gradient(to bottom, #2B2B2C, black);">
    
-    <div class="offer-img w-full md:w-[40%] flex justify-center">
-      <img src="img/products/set1.png" alt="Limited Offer" class="w-[220px] md:w-[280px] rounded-lg shadow-lg" />
+    <div class="offer-img w-full md:p-10 flex justify-center">
+      <img src="img/products/set1.png" alt="Limited Offer" class="w-36 md:w-52 rounded-lg shadow-lg" />
     </div>
 
-    <div class="offer-text w-full mt-4 md:w-[50%] text-white text-center md:text-left space-y-4 ">
-      <h2 class="text-2xl md:text-3xl font-bold">Limited Offer</h2>
-      <h4 class="text-base md:text-lg font-medium">
+    <div class="offer-text w-full mt-4  text-white text-center md:text-left space-y-4 md:mr-12 ">
+      <h2 class="text-lg md:text-3xl font-bold">Limited Offer</h2>
+      <h4 class=" text-sm  md:text-lg font-medium">
         35% OFF for the first 30 Customers
       </h4>
-      <button class="bg-white text-black px-5 py-2 rounded-md font-semibold hover:bg-gray-300 transition duration-300">
-        Shop Now <i class="fa-solid fa-arrow-right ml-2"></i>
-      </button>
+      <div class="bg-white w-24 md:w-32 text-black text-sm md:text-lg ml-36 md:ml-0 p-1 md:px-5 md:py-2 rounded-md font-semibold hover:bg-gray-300 transition duration-300">
+        Shop Now
+      </div>
     </div>
   </div>
   <section class="text-center  py-10 rounded-lg shadow-lg  ">
@@ -301,9 +302,9 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
   <!-- Footer -->
 
   <footer class=" bg-black p-2  shadow-lg ">
-    <div class="text-white text-left p-5 flex flex-col gap-5">
+    <div class="text-white text-left p-2 md:p-5 flex flex-col gap-2 md:gap-5">
       <h1 class="font-bold md:text-xl">NOSTRA</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui fugiat quibusdam explicabo ratione culpa
+      <p class="text-xs md:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui fugiat quibusdam explicabo ratione culpa
         consequatur repellendus dolorum velit sunt similique?</p>
       <div class="footer-icon ">
         <i class="icon fa-brands fa-instagram p-3" style="color: #ffffff;"></i>
